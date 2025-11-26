@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MathTutor 12 - Giải Toán Lớp 12</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- MathJax Configuration -->
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']],
+          processEscapes: true
+        },
+        svg: {
+          fontCache: 'global'
+        }
+      };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #f3f4f6;
+      }
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #cbd5e1;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #94a3b8;
+      }
+
+      /* Professional Math Content Styling (Bootstrap-like) */
+      .math-content {
+        font-size: 1rem;
+        line-height: 1.7;
+        color: #212529;
+      }
+
+      .math-content h1, .math-content h2, .math-content h3 {
+        color: #0d6efd; /* Bootstrap Primary Blue */
+        font-weight: 700;
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+        border-bottom: 2px solid #e9ecef;
+        padding-bottom: 0.5rem;
+      }
+      
+      .math-content h3 {
+        font-size: 1.25rem;
+        border-bottom: none;
+        color: #0a58ca;
+      }
+
+      .math-content p {
+        margin-bottom: 1rem;
+        text-align: justify;
+      }
+
+      .math-content ul, .math-content ol {
+        padding-left: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      .math-content ul { list-style-type: disc; }
+      .math-content ol { list-style-type: decimal; }
+
+      .math-content li {
+        margin-bottom: 0.5rem;
+      }
+
+      /* Highlight specific math formatting */
+      .math-content strong {
+        color: #d63384; /* Bootstrap pink-ish for emphasis */
+        font-weight: 700;
+      }
+
+      /* Blockquotes as Info Alerts */
+      .math-content blockquote {
+        background-color: #f8f9fa;
+        border-left: 5px solid #0dcaf0; /* Bootstrap Info Cyan */
+        padding: 1rem 1.25rem;
+        margin: 1.5rem 0;
+        border-radius: 0.25rem;
+        color: #495057;
+        font-style: normal; /* Remove italic */
+      }
+      
+      .math-content blockquote p:last-child {
+        margin-bottom: 0;
+      }
+
+      /* Code blocks */
+      .math-content pre {
+        background-color: #212529;
+        color: #f8f9fa;
+        padding: 1rem;
+        border-radius: 0.375rem;
+        overflow-x: auto;
+        margin-bottom: 1rem;
+      }
+      
+      /* Tables */
+      .math-content table {
+        width: 100%;
+        margin-bottom: 1rem;
+        color: #212529;
+        border-collapse: collapse;
+        border: 1px solid #dee2e6;
+      }
+      .math-content th, .math-content td {
+        padding: 0.75rem;
+        vertical-align: top;
+        border-top: 1px solid #dee2e6;
+      }
+      .math-content th {
+        vertical-align: bottom;
+        border-bottom: 2px solid #dee2e6;
+        background-color: #e9ecef;
+        font-weight: 600;
+        text-align: left;
+      }
+      .math-content tbody tr:nth-of-type(odd) {
+        background-color: rgba(0, 0, 0, 0.05);
+      }
+
+      /* MathJax Container Overflow */
+      mjx-container {
+        overflow-x: auto;
+        max-width: 100%;
+        padding: 5px 0;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "uuid": "https://aistudiocdn.com/uuid@^13.0.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
